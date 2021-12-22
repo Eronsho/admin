@@ -1,0 +1,149 @@
+$color_text: #e0e0e0;
+.hader {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background: #1f1f1f;
+  /* big */
+
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+
+  &__container {
+    width: 100%;
+    max-width: 1215px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 255px;
+    height: 100%;
+    max-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+      .hader__burger {
+        background: #568ce3;
+        &::before,
+        &::after {
+          background: #568ce3;
+        }
+      }
+    }
+  }
+  &__burger {
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    border-radius: 25px;
+    position: relative;
+    transition: all 0.7s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 2px;
+      top: 9px;
+      background: #fff;
+      border-radius: 25px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 2px;
+      background: #fff;
+
+      top: 18px;
+      border-radius: 25px;
+    }
+  }
+  &__menu {
+  }
+}
+.menu {
+  width: 100%;
+  max-width: 365px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      font-family: Exo 2;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 23px;
+      color: $color_text;
+
+      transition: all 0.7s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+
+      cursor: pointer;
+      &:hover {
+        color: rgba(86, 140, 227, 1);
+      }
+    }
+    img {
+      margin: 7px 0 0 12px;
+    }
+  }
+
+  &__buttons {
+  }
+
+  &__button {
+    border: none;
+    color: #22d1b2;
+    font-family: Exo 2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__interface {
+    width: 100%;
+    max-width: 170px;
+  }
+}
+.interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__search {
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+  }
+
+  &__star {
+    width: 100%;
+    max-height: 27px;
+    max-width: 27px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      max-height: 27px;
+      max-width: 27px;
+    }
+  }
+
+  &__icon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+}

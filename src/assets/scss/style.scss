@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "header.scss";
+@import "footer.scss";
+@import "admin.scss";
+
+body {
+  background-image: url("../images/shroud-nebula-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-position-x: center;
+}
+.container {
+  width: 100%;
+  max-width: 1010px;
+  margin: 0 auto;
+  background: #272729;
+  border-radius: 2px;
+  padding: 0 30px;
+
+  box-sizing: border-box;
+}
